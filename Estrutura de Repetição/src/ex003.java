@@ -4,7 +4,7 @@ public class ex003 {
 		int i = 1, soma = 0;
 		while (i<101) {
 			soma = soma+i;
-			i = i + 1;
+			i++;
 		}
 		System.out.println(soma);
 	}
