@@ -11,9 +11,9 @@ public class ex_NumeroPrimo {
 			}
 			i = i + 1;
 		}if (divisores == 2) {
-			System.out.println("É um Número Primo :)");
+			System.out.println("É um Número Primo");
 		}else {
-			System.out.println("Não é um Número Primo :(");
+			System.out.println("Não é um Número Primo");
 		}
 	}
 }
