@@ -4,8 +4,8 @@ public class ex02 {
     Scanner input = new Scanner(System.in);
 
     //Inicializando contador
-    i = 0;
-    n = 0;
+    int i = 0;
+    int n = 0;
     int resultado;
     final int TAM=5;
 
@@ -14,16 +14,18 @@ public class ex02 {
 
     //Obtendo Valores
     for (i=0; i<TAM; i++){
-      System.out.print("Digite um valor para A");
+      System.out.print("Digite um valor para A: ");
       a[i] = input.nextInt();
     }
     
     //Mostrando tabuada
     for (i=0; i<TAM; i++){
-      do{
+      System.out.println("Tabuada do "+a[i]+": ");
+      for(n=1; n<=10; n++){
         resultado = a[i] * n;
-        System.out.println(a[i]+"x"+n+"="+resultado);
-      }while (n<=10);
+        System.out.println(a[i] + " x " + n + " = " + resultado);
+      }
+      System.out.println("");
     }
   }  
 }
