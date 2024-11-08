@@ -1,21 +1,21 @@
 import java.util.*;
 public class ex05 {
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-     
-    final int TAM = 10;
-    int a[] = new int [TAM];
+    // Definindo o vetor A com 10 elementos inteiros
+    int[] A = {10, 15, 21, 8, 30, 12, 18, 25, 7, 14};
 
-    for(int i=0; i<TAM; i++){
-      System.out.println("Digite o Valor de A: ");
-      a[i] = input.nextInt();
-    }
+    // Para cada elemento do vetor A, imprimimos o valor e os divisores do respectivo elemento
+    for (int elemento : A) {
+        System.out.println("Elemento: " + elemento);
+        System.out.print("Divisores: ");
 
-    for(int i=0; i<TAM; i++){
-      System.out.println("Número: "+a[i]+" ");
-      for(int j=0; j<a[i]; j++){
-        
-      }
-    }
+        // Encontrando divisores do elemento
+        for (int i = 1; i <= elemento; i++) {
+            if (elemento % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("\n"); // Pula uma linha após cada elemento para facilitar a leitura
   }
+}
 }
